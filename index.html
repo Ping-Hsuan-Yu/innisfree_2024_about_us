@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.innisfree.com.tw/static/front/tw/web/css/common.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.innisfree.com.tw/static/front/tw/web/css/renewal.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.innisfree.com.tw/static/front/tw/web/css/contents.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>品牌故事</title>
+  </head>
+  <body>
+    <div id="container" class="sub pb0">
+      <div class="breadcrumb">
+        <div class="contents">
+          <span><a href="/">首頁</a></span>
+          <span><a href="/about?id=brand_inni">關於我們</a></span>
+          <em>品牌故事</em>
+        </div>
+      </div>
+
+      <!--2024 Brand Story-->
+
+      <div id="brand-story-container">
+        <div class="island">
+          <div class="sea"></div>
+        </div>
+        <div id="main">
+          <div class="kv">
+            <img
+              src="./assets/logo-1.png"
+              alt="innisfree"
+              class="logo-1 fl_r"
+            />
+            <p class="quote">
+              Effective,<br />
+              Nature-Powered Skincare<br />
+              Discovered from the Island
+            </p>
+            <img
+              src="./assets/innisfree%20logo.png"
+              alt="innisfree"
+              class="innisfree_logo"
+            />
+          </div>
+          <div class="about_us">
+            <p class="ta_c content_title">About us</p>
+            <p class="ta_c content_txt">
+              INNISFREE的品牌概念是<span class="yellow">「高效自然主義」</span
+              >，<br />
+              我們致力於精進綠茶成分研究，深入探索最有效的成分，<br />
+              除了韓國濟州島上的自然原料外，<br />
+              也添加更多高效成分如A醇、維他命C、神經醯胺等，<br />
+              不斷升級產品配方提供給我們的愛用者。<br />
+              <span class="yellow">
+                以更加多元、自由、充滿活力形象的「自由之島」，<br />
+              </span>
+              開啟全新肌膚保養的可能性，致力打造出肌膚健康之美！
+            </p>
+          </div>
+          <svg style="position: absolute">
+            <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+              <feTurbulence
+                id="sea-filter"
+                numOctaves="3"
+                seed="100"
+                baseFrequency="0.05"
+              ></feTurbulence>
+              <feDisplacementMap
+                scale="30"
+                in="SourceGraphic"
+              ></feDisplacementMap>
+              <animate
+                xlink:href="#sea-filter"
+                attributeName="baseFrequency"
+                dur="60s"
+                keyTimes="0;0.5;1"
+                values="0.02 0.06;0.04 0.08;0.02 0.06"
+                repeatCount="indefinite"
+              />
+            </filter>
+          </svg>
+          <div class="video">
+            <video
+              width="100%"
+              muted
+              autoplay
+              loop
+              playsinline
+              src="https://images.innisfree.co.kr/resources/mobile2/images/about/230228/rebranding_video.mp4"
+            ></video>
+          </div>
+          <div class="after_video">
+            <div class="the_new_isle">
+              <div class="island">
+                <div class="island_sea"></div>
+                <div class="content">
+                  <p class="ta_c content_title">THE NEW ISLE</p>
+                  <p class="ta_c content_txt">發覺高效能、自然能量的保養之道</p>
+                  <div class="range">
+                    <div class="card green_tea">
+                      <img src="./assets/green-tea.png" alt="" class="pic" />
+                      <div>
+                        <span>綠茶籽玻尿酸保濕精華</span>
+                        <a
+                          href="https://www.innisfree.com.tw/product/innisfree-green-tea-seed-hyaluronic-serum/detail/471?optno=1122"
+                          target="_blank"
+                        >
+                          <span>看更多</span>
+                          <img src="./assets/arrow.svg" alt="" />
+                        </a>
+                      </div>
+                      <img src="./assets/green-tea.svg" alt="" class="line" />
+                    </div>
+                    <div class="card black_tea">
+                      <img src="./assets/black-tea.png" alt="" class="pic" />
+                      <div>
+                        <span>紅茶極效修護安瓶</span>
+                        <a
+                          href="https://www.innisfree.com.tw/product/innisfree-black-tea-youth-enhancing-ampoule-30ml/detail/400?optno=897"
+                          target="_blank"
+                        >
+                          <span>看更多</span>
+                          <img src="./assets/arrow.svg" alt="" />
+                        </a>
+                      </div>
+                      <img src="./assets/black-tea.svg" alt="" class="line" />
+                    </div>
+                    <div class="card retinol">
+                      <img src="./assets/retinol.png" alt="" class="pic" />
+                      <div>
+                        <span>A醇淨膚超修護安瓶</span>
+                        <a
+                          href="https://www.innisfree.com.tw/product/retinol-cica-repair-ampoule-30ml/detail/695?optno=1822"
+                          target="_blank"
+                        >
+                          <span>看更多</span>
+                          <img src="./assets/arrow.svg" alt="" />
+                        </a>
+                      </div>
+                      <img src="./assets/retinol.svg" alt="" class="line" />
+                    </div>
+                    <div class="card volcanic">
+                      <img src="./assets/volcanic.png" alt="" class="pic" />
+                      <div>
+                        <span
+                          >超級火山泥毛孔<br />
+                          潔淨面膜</span
+                        >
+                        <a
+                          href="https://www.innisfree.com.tw/product/innisfree-super-volcanic-pore-clay-mask/detail/125?optno=284"
+                          target="_blank"
+                        >
+                          <span>看更多</span>
+                          <img src="./assets/arrow.svg" alt="" />
+                        </a>
+                      </div>
+                      <img src="./assets/volcanic.svg" alt="" class="line" />
+                    </div>
+                    <div class="card vitamin_c">
+                      <img src="./assets/vitamin-c.png" alt="" class="pic" />
+                      <div>
+                        <span>維他命C淨亮精華</span>
+                        <a
+                          href="https://www.innisfree.com.tw/product/vitamin-c-green-tea-enzyme-brightening-serum/detail/1099?optno=2945"
+                          target="_blank"
+                        >
+                          <span>看更多</span>
+                          <img src="./assets/arrow.svg" alt="" />
+                        </a>
+                      </div>
+                      <img src="./assets/vitamin-c.svg" alt="" class="line" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="be_free_with_innisfree">
+              <div>
+                <p class="quote">
+                  Enjoy being you,<br />
+                  Be free with
+                </p>
+                <img
+                  src="./assets/innisfree%20logo.png"
+                  alt="innisfree"
+                  class="innisfree_logo"
+                />
+                <p class="quote green_box">
+                  和
+                  <img
+                    src="./assets/innisfree%20logo.png"
+                    alt="innisfree"
+                    class="innisfree_logo"
+                  />
+                  一起打造健康美肌
+                </p>
+              </div>
+              <img src="./assets/man.png" alt="" class="man_pic" />
+              <img src="./assets/girl.png" alt="" class="girl_pic" />
+            </div>
+            <div class="history">
+              <p class="ta_c content_title">INNISFREE History</p>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/2024.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2023.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2022.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2020.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2014.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2010.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2008.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2003.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/2000.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="more">
+              <p class="ta_c content_title">More INNISFREE…</p>
+              <div class="card_group">
+                <div class="card">
+                  <a href="" target="_blank">
+                    <span>Green Tea Heritage</span><br />
+                    <span>
+                      <span>綠茶歷史</span>
+                      <img src="./assets/arrow.svg" alt="" />
+                    </span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="" target="_blank">
+                    <span>Better for Earth</span><br />
+                    <span>
+                      <span>品牌關懷</span>
+                      <img src="./assets/arrow.svg" alt="" />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
+    });
+  </script>
+</html>

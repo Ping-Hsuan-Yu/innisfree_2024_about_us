@@ -1,0 +1,389 @@
+@use "sass:math";
+
+@function clampCalc($max, $min) {
+    $val: #{math.div($max, 12.8)}vw;
+    @if ($max > 0) {
+        @return clamp(#{$min}px, $val, #{$max}px);
+    } @else {
+        @return clamp(#{$max}px, $val, #{$min}px);
+    }
+}
+
+#brand-story-container {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    max-height: 5537px;
+    height: 432.578125vw;
+    background: #0089b9;
+    // background: linear-gradient(180deg, rgba(0, 128, 165, 1) 0%, rgba(0, 177, 233, 1) 100%);
+    @media (min-width: 1280px) {
+        padding-left: calc((100vw - 1280px) / 2);
+        padding-right: calc((100vw - 1280px) / 2);
+    }
+    #main {
+        max-width: 1280px;
+        position: relative;
+        z-index: 1;
+        top: -100vh;
+    }
+    .content_title {
+        font-size: clampCalc(40, 18);
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        text-shadow: 1px 6px 24px rgba(19, 41, 57, 0.66);
+    }
+    .content_txt {
+        font-size: clampCalc(34, 14);
+        line-height: 1.882;
+        font-weight: 400;
+        .yellow {
+            color: #ffff77;
+        }
+    }
+    .quote {
+        font-size: clampCalc(40, 18);
+        font-weight: 500;
+        line-height: 1.575;
+    }
+
+    .island {
+        position: sticky;
+        top: 0;
+        background-image: url("../assets/kv.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 1697px;
+        height: 100vh;
+        .sea {
+            position: absolute;
+            background-image: url("../assets/kv-sea.png");
+            background-size: cover;
+            top: 0;
+            left: 0;
+            max-width: 1280px;
+            width: 100%;
+            max-height: 1697px;
+            height: 100vh;
+            filter: url("#turbulence");
+        }
+    }
+    .kv {
+        .logo-1 {
+            width: 16.40625%;
+            padding-top: 3.75%;
+            padding-right: 5.5625%;
+        }
+        .quote {
+            padding-top: 33.90625%;
+            padding-left: 5.5625%;
+        }
+        .innisfree_logo {
+            width: 24.453125%;
+            padding-top: 9.53125%;
+            padding-left: 5.5625%;
+        }
+    }
+    .about_us {
+        .content_title {
+            margin-top: 8.203125%;
+        }
+        .content_txt {
+            font-size: clampCalc(28, 14);
+            margin: 5.5625% 10%;
+            padding: 6% 0;
+            border-radius: 40px;
+            background-color: rgba(0, 76, 98, 0.431);
+            box-shadow: inset 0 0 136px 0 rgba(0, 0, 0, 0.32);
+            .yellow {
+                color: #ffff77;
+            }
+        }
+    }
+    .video video {
+        position: relative;
+        z-index: 1;
+    }
+
+    .after_video {
+        background: #0089b9;
+        // background: linear-gradient(180deg, #0080a5 0%, #00b1e9 100%);
+    }
+    .the_new_isle {
+        margin-top: -20px;
+        .island {
+            position: relative;
+            background-image: url("../assets/isle-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            max-height: 1040px;
+            height: 81.25vw;
+            .island_sea {
+                position: absolute;
+                background-image: url("../assets/isle-bg-sea.png");
+                background-size: cover;
+                top: 0;
+                left: 0;
+                max-width: 1280px;
+                width: 100%;
+                max-height: 1040px;
+                height: 81.25vw;
+                filter: url("#turbulence");
+            }
+            .content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 1280px;
+                width: 100%;
+                max-height: 1040px;
+                height: 81.25vw;
+                margin-top: 7.5%;
+                .range {
+                    position: relative;
+                    .card {
+                        padding: 2% 2% 2% 4.0625%;
+                        position: absolute;
+                        border-radius: 9px;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        box-shadow: 2.7px 5.3px 7px 0px rgba(19, 41, 57, 0.41);
+                        span {
+                            color: #ffff77;
+                            font-size: clampCalc(34, 14);
+                            line-height: 1.2;
+                            font-weight: 600;
+                            display: block;
+                        }
+                        a {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 2%;
+                            span {
+                                margin-right: 2%;
+                                display: block;
+                                color: white;
+                                font-size: clampCalc(18, 0);
+                                font-weight: 400;
+                                line-height: 1;
+                            }
+                            img {
+                                max-width: 28px;
+                                width: 2.1875vw;
+                            }
+                        }
+                        img.pic,
+                        img.line {
+                            position: absolute;
+                        }
+                    }
+                    .green_tea {
+                        top: clampCalc(138, 0);
+                        left: clampCalc(108, 0);
+                        .pic {
+                            max-width: 61px;
+                            width: 4.765625vw;
+                            top: clampCalc(-60, 0);
+                            left: clampCalc(-24, 0);
+                        }
+                        .line {
+                            max-width: 116px;
+                            width: 9.0625vw;
+                            bottom: clampCalc(-26, 0);
+                            right: clampCalc(-116, 0);
+                        }
+                    }
+                    .black_tea {
+                        top: clampCalc(388, 0);
+                        left: clampCalc(82, 0);
+                        .pic {
+                            max-width: 62px;
+                            width: 4.84375vw;
+                            top: clampCalc(-74, 0);
+                            left: clampCalc(-24, 0);
+                        }
+                        .line {
+                            max-width: 182px;
+                            width: 14.21875vw;
+                            top: clampCalc(-16, 0);
+                            right: clampCalc(-82, 0);
+                        }
+                    }
+                    .retinol {
+                        top: clampCalc(616, 0);
+                        left: clampCalc(230, 0);
+                        .pic {
+                            max-width: 63px;
+                            width: 4.921875vw;
+                            top: clampCalc(-64, 0);
+                            left: clampCalc(-24, 0);
+                        }
+                        .line {
+                            max-width: 76px;
+                            width: 5.9375vw;
+                            top: clampCalc(-90, 0);
+                            right: clampCalc(-7, 0);
+                        }
+                    }
+                    .volcanic {
+                        top: clampCalc(148, 0);
+                        right: clampCalc(48, 0);
+                        .pic {
+                            max-width: 90px;
+                            width: 7.03125vw;
+                            top: clampCalc(-38, 0);
+                            left: clampCalc(-54, 0);
+                        }
+                        .line {
+                            max-width: 125px;
+                            width: 9.765625vw;
+                            bottom: clampCalc(62, 0);
+                            left: clampCalc(-125, 0);
+                        }
+                    }
+                    .vitamin_c {
+                        top: clampCalc(520, 0);
+                        right: clampCalc(108, 0);
+                        .pic {
+                            max-width: 63px;
+                            width: 4.921875vw;
+                            top: clampCalc(-74, 0);
+                            left: clampCalc(-24, 0);
+                        }
+                        .line {
+                            max-width: 125px;
+                            width: 9.765625vw;
+                            bottom: clampCalc(22, 0);
+                            left: clampCalc(-124, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .be_free_with_innisfree {
+        position: relative;
+        padding-bottom: 8%;
+        > div {
+            margin-left: 5.5625%;
+        }
+        .quote:not(.green_box) {
+            padding-top: 29.5%;
+        }
+        .innisfree_logo {
+            margin-top: 1%;
+            width: 17.5%;
+        }
+        .green_box {
+            width: 48%;
+            margin-top: 2%;
+            margin-left: -1%;
+            padding: 0.5% 1% 0 1%;
+            border-radius: 10px;
+            background-color: rgb(1, 182, 93);
+            display: flex;
+            align-items: baseline;
+            img.innisfree_logo {
+                margin: 0 1%;
+                width: 34.5%;
+            }
+        }
+        .man_pic {
+            position: absolute;
+            top: 6%;
+            right: 30%;
+            max-width: 407px;
+            width: 31.796875vw;
+        }
+        .girl_pic {
+            position: absolute;
+            top: 26%;
+            right: 5.5625%;
+            max-width: 383px;
+            width: 29.921975vw;
+        }
+    }
+
+    .history {
+        padding-bottom: 4%;
+        .content_title {
+            margin: 5% 0;
+        }
+        .swiper {
+            width: 89%;
+            img {
+                width: 100%;
+            }
+        }
+        .swiper-pagination {
+            position: relative;
+            margin-top: 5%;
+            background-color: #16d0ef;
+            max-height: 6px;
+            height: 0.46875vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .swiper-pagination-bullet {
+            max-width: 18px;
+            max-height: 18px;
+            --swiper-pagination-bullet-width: 1.40625vw;
+            --swiper-pagination-bullet-height: 1.40625vw;
+            border: clampCalc(3, 1) white solid;
+            --swiper-pagination-bullet-inactive-color: #005e30;
+            --swiper-pagination-bullet-inactive-opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            --swiper-pagination-color: #01b65d;
+        }
+    }
+    .more {
+        padding: 2.5% 5.5625% 5% 5.5625%;
+        .content_title {
+            margin: 5% 0;
+        }
+        .card_group {
+            display: flex;
+            gap: 4px;
+            .card:first-of-type {
+                background-image: url("../assets/green-tea-heritage.png");
+            }
+            .card:last-of-type {
+                background-image: url("../assets/better-for-earth.png");
+            }
+        }
+        .card {
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 567px;
+            max-height: 178px;
+            width: 44.296875vw;
+            height: 13.90625vw;
+            display: flex;
+            align-items: center;
+            padding-left: 1.5%;
+            a {
+                color: white;
+                span:first-of-type {
+                    font-size: clampCalc(34, 20);
+                    font-weight: 900;
+                }
+                span:last-of-type {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: clampCalc(20, 12);
+                    font-weight: 500;
+                    img {
+                        margin-top: 1%;
+                        max-width: 28px;
+                        width: 2.1875vw;
+                    }
+                }
+            }
+        }
+    }
+}

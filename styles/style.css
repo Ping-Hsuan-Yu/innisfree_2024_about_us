@@ -1,0 +1,370 @@
+#brand-story-container {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  max-height: 5537px;
+  height: 432.578125vw;
+  background: #0089b9;
+}
+@media (min-width: 1280px) {
+  #brand-story-container {
+    padding-left: calc((100vw - 1280px) / 2);
+    padding-right: calc((100vw - 1280px) / 2);
+  }
+}
+#brand-story-container #main {
+  max-width: 1280px;
+  position: relative;
+  z-index: 1;
+  top: -100vh;
+}
+#brand-story-container .content_title {
+  font-size: clamp(18px, 3.125vw, 40px);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 1px 6px 24px rgba(19, 41, 57, 0.66);
+}
+#brand-story-container .content_txt {
+  font-size: clamp(14px, 2.65625vw, 34px);
+  line-height: 1.882;
+  font-weight: 400;
+}
+#brand-story-container .content_txt .yellow {
+  color: #ffff77;
+}
+#brand-story-container .quote {
+  font-size: clamp(18px, 3.125vw, 40px);
+  font-weight: 500;
+  line-height: 1.575;
+}
+#brand-story-container .island {
+  position: sticky;
+  top: 0;
+  background-image: url("../assets/kv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 1697px;
+  height: 100vh;
+}
+#brand-story-container .island .sea {
+  position: absolute;
+  background-image: url("../assets/kv-sea.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  max-width: 1280px;
+  width: 100%;
+  max-height: 1697px;
+  height: 100vh;
+  filter: url("#turbulence");
+}
+#brand-story-container .kv .logo-1 {
+  width: 16.40625%;
+  padding-top: 3.75%;
+  padding-right: 5.5625%;
+}
+#brand-story-container .kv .quote {
+  padding-top: 33.90625%;
+  padding-left: 5.5625%;
+}
+#brand-story-container .kv .innisfree_logo {
+  width: 24.453125%;
+  padding-top: 9.53125%;
+  padding-left: 5.5625%;
+}
+#brand-story-container .about_us .content_title {
+  margin-top: 8.203125%;
+}
+#brand-story-container .about_us .content_txt {
+  font-size: clamp(14px, 2.1875vw, 28px);
+  margin: 5.5625% 10%;
+  padding: 6% 0;
+  border-radius: 40px;
+  background-color: rgba(0, 76, 98, 0.431);
+  box-shadow: inset 0 0 136px 0 rgba(0, 0, 0, 0.32);
+}
+#brand-story-container .about_us .content_txt .yellow {
+  color: #ffff77;
+}
+#brand-story-container .video video {
+  position: relative;
+  z-index: 1;
+}
+#brand-story-container .after_video {
+  background: #0089b9;
+}
+#brand-story-container .the_new_isle {
+  margin-top: -20px;
+}
+#brand-story-container .the_new_isle .island {
+  position: relative;
+  background-image: url("../assets/isle-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 1040px;
+  height: 81.25vw;
+}
+#brand-story-container .the_new_isle .island .island_sea {
+  position: absolute;
+  background-image: url("../assets/isle-bg-sea.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  max-width: 1280px;
+  width: 100%;
+  max-height: 1040px;
+  height: 81.25vw;
+  filter: url("#turbulence");
+}
+#brand-story-container .the_new_isle .island .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1280px;
+  width: 100%;
+  max-height: 1040px;
+  height: 81.25vw;
+  margin-top: 7.5%;
+}
+#brand-story-container .the_new_isle .island .content .range {
+  position: relative;
+}
+#brand-story-container .the_new_isle .island .content .range .card {
+  padding: 2% 2% 2% 4.0625%;
+  position: absolute;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2.7px 5.3px 7px 0px rgba(19, 41, 57, 0.41);
+}
+#brand-story-container .the_new_isle .island .content .range .card span {
+  color: #ffff77;
+  font-size: clamp(14px, 2.65625vw, 34px);
+  line-height: 1.2;
+  font-weight: 600;
+  display: block;
+}
+#brand-story-container .the_new_isle .island .content .range .card a {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+#brand-story-container .the_new_isle .island .content .range .card a span {
+  margin-right: 2%;
+  display: block;
+  color: white;
+  font-size: clamp(0px, 1.40625vw, 18px);
+  font-weight: 400;
+  line-height: 1;
+}
+#brand-story-container .the_new_isle .island .content .range .card a img {
+  max-width: 28px;
+  width: 2.1875vw;
+}
+#brand-story-container .the_new_isle .island .content .range .card img.pic,
+#brand-story-container .the_new_isle .island .content .range .card img.line {
+  position: absolute;
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea {
+  top: clamp(0px, 10.78125vw, 138px);
+  left: clamp(0px, 8.4375vw, 108px);
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea .pic {
+  max-width: 61px;
+  width: 4.765625vw;
+  top: clamp(-60px, -4.6875vw, 0px);
+  left: clamp(-24px, -1.875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea .line {
+  max-width: 116px;
+  width: 9.0625vw;
+  bottom: clamp(-26px, -2.03125vw, 0px);
+  right: clamp(-116px, -9.0625vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .black_tea {
+  top: clamp(0px, 30.3125vw, 388px);
+  left: clamp(0px, 6.40625vw, 82px);
+}
+#brand-story-container .the_new_isle .island .content .range .black_tea .pic {
+  max-width: 62px;
+  width: 4.84375vw;
+  top: clamp(-74px, -5.78125vw, 0px);
+  left: clamp(-24px, -1.875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .black_tea .line {
+  max-width: 182px;
+  width: 14.21875vw;
+  top: clamp(-16px, -1.25vw, 0px);
+  right: clamp(-82px, -6.40625vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .retinol {
+  top: clamp(0px, 48.125vw, 616px);
+  left: clamp(0px, 17.96875vw, 230px);
+}
+#brand-story-container .the_new_isle .island .content .range .retinol .pic {
+  max-width: 63px;
+  width: 4.921875vw;
+  top: clamp(-64px, -5vw, 0px);
+  left: clamp(-24px, -1.875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .retinol .line {
+  max-width: 76px;
+  width: 5.9375vw;
+  top: clamp(-90px, -7.03125vw, 0px);
+  right: clamp(-7px, -0.546875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .volcanic {
+  top: clamp(0px, 11.5625vw, 148px);
+  right: clamp(0px, 3.75vw, 48px);
+}
+#brand-story-container .the_new_isle .island .content .range .volcanic .pic {
+  max-width: 90px;
+  width: 7.03125vw;
+  top: clamp(-38px, -2.96875vw, 0px);
+  left: clamp(-54px, -4.21875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .volcanic .line {
+  max-width: 125px;
+  width: 9.765625vw;
+  bottom: clamp(0px, 4.84375vw, 62px);
+  left: clamp(-125px, -9.765625vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .vitamin_c {
+  top: clamp(0px, 40.625vw, 520px);
+  right: clamp(0px, 8.4375vw, 108px);
+}
+#brand-story-container .the_new_isle .island .content .range .vitamin_c .pic {
+  max-width: 63px;
+  width: 4.921875vw;
+  top: clamp(-74px, -5.78125vw, 0px);
+  left: clamp(-24px, -1.875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .vitamin_c .line {
+  max-width: 125px;
+  width: 9.765625vw;
+  bottom: clamp(0px, 1.71875vw, 22px);
+  left: clamp(-124px, -9.6875vw, 0px);
+}
+#brand-story-container .be_free_with_innisfree {
+  position: relative;
+  padding-bottom: 8%;
+}
+#brand-story-container .be_free_with_innisfree > div {
+  margin-left: 5.5625%;
+}
+#brand-story-container .be_free_with_innisfree .quote:not(.green_box) {
+  padding-top: 29.5%;
+}
+#brand-story-container .be_free_with_innisfree .innisfree_logo {
+  margin-top: 1%;
+  width: 17.5%;
+}
+#brand-story-container .be_free_with_innisfree .green_box {
+  width: 48%;
+  margin-top: 2%;
+  margin-left: -1%;
+  padding: 0.5% 1% 0 1%;
+  border-radius: 10px;
+  background-color: rgb(1, 182, 93);
+  display: flex;
+  align-items: baseline;
+}
+#brand-story-container .be_free_with_innisfree .green_box img.innisfree_logo {
+  margin: 0 1%;
+  width: 34.5%;
+}
+#brand-story-container .be_free_with_innisfree .man_pic {
+  position: absolute;
+  top: 6%;
+  right: 30%;
+  max-width: 407px;
+  width: 31.796875vw;
+}
+#brand-story-container .be_free_with_innisfree .girl_pic {
+  position: absolute;
+  top: 26%;
+  right: 5.5625%;
+  max-width: 383px;
+  width: 29.921975vw;
+}
+#brand-story-container .history {
+  padding-bottom: 4%;
+}
+#brand-story-container .history .content_title {
+  margin: 5% 0;
+}
+#brand-story-container .history .swiper {
+  width: 89%;
+}
+#brand-story-container .history .swiper img {
+  width: 100%;
+}
+#brand-story-container .history .swiper-pagination {
+  position: relative;
+  margin-top: 5%;
+  background-color: #16d0ef;
+  max-height: 6px;
+  height: 0.46875vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#brand-story-container .history .swiper-pagination-bullet {
+  max-width: 18px;
+  max-height: 18px;
+  --swiper-pagination-bullet-width: 1.40625vw;
+  --swiper-pagination-bullet-height: 1.40625vw;
+  border: clamp(1px, 0.234375vw, 3px) white solid;
+  --swiper-pagination-bullet-inactive-color: #005e30;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+#brand-story-container .history .swiper-pagination-bullet-active {
+  --swiper-pagination-color: #01b65d;
+}
+#brand-story-container .more {
+  padding: 2.5% 5.5625% 5% 5.5625%;
+}
+#brand-story-container .more .content_title {
+  margin: 5% 0;
+}
+#brand-story-container .more .card_group {
+  display: flex;
+  gap: 4px;
+}
+#brand-story-container .more .card_group .card:first-of-type {
+  background-image: url("../assets/green-tea-heritage.png");
+}
+#brand-story-container .more .card_group .card:last-of-type {
+  background-image: url("../assets/better-for-earth.png");
+}
+#brand-story-container .more .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 567px;
+  max-height: 178px;
+  width: 44.296875vw;
+  height: 13.90625vw;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5%;
+}
+#brand-story-container .more .card a {
+  color: white;
+}
+#brand-story-container .more .card a span:first-of-type {
+  font-size: clamp(20px, 2.65625vw, 34px);
+  font-weight: 900;
+}
+#brand-story-container .more .card a span:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: clamp(12px, 1.5625vw, 20px);
+  font-weight: 500;
+}
+#brand-story-container .more .card a span:last-of-type img {
+  margin-top: 1%;
+  max-width: 28px;
+  width: 2.1875vw;
+}/*# sourceMappingURL=style.css.map */
