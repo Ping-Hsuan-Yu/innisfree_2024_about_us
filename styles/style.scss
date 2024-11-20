@@ -15,12 +15,8 @@
     font-style: normal;
     color: white;
     max-height: 5423px;
-    height: 490.09375vw;
-    @media (max-width: 1280px) {
-        height: 426vw;
-    }
+    height: 420vw;
     background: #0089b9;
-    // background: linear-gradient(180deg, rgba(0, 128, 165, 1) 0%, rgba(0, 177, 233, 1) 100%);
     @media (min-width: 1280px) {
         padding-left: calc((100vw - 1280px) / 2);
         padding-right: calc((100vw - 1280px) / 2);
@@ -57,13 +53,18 @@
         top: 0;
         background-image: url("../assets/kv.png");
         background-size: contain;
+        @media (min-width: 620px) {
+            background-size: cover;
+        }
         background-repeat: no-repeat;
-        max-height: 1697px;
         height: 100vh;
         .sea {
             position: absolute;
             background-image: url("../assets/kv-sea.png");
             background-size: contain;
+            @media (min-width: 620px) {
+                background-size: cover;
+            }
             background-repeat: no-repeat;
             top: 0;
             left: 0;
