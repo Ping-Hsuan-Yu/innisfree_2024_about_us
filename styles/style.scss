@@ -146,7 +146,13 @@
                 max-height: 1040px;
                 height: 81.25vw;
                 margin-top: 7.5%;
-               
+                .swiper-slide > .range {
+                    display: none;
+                }
+
+                .swiper-slide-active > .range {
+                    display: block;
+                }
                 .range {
                     position: relative;
                     .card {
@@ -266,7 +272,7 @@
                             width: clampCalc(218, 0);
                         }
                         top: clampCalc(100, 0);
-                        right:  clampCalc(150, 0);
+                        right: clampCalc(150, 0);
                         .pic {
                             width: clampCalc(89, 0);
                             top: clampCalc(4, 0);
@@ -283,7 +289,7 @@
                             width: clampCalc(288, 0);
                         }
                         top: clampCalc(480, 0);
-                        right:  clampCalc(102, 0);
+                        right: clampCalc(102, 0);
                         .pic {
                             width: clampCalc(115, 0);
                             top: clampCalc(-74, 0);

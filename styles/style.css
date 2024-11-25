@@ -138,6 +138,12 @@
   height: 81.25vw;
   margin-top: 7.5%;
 }
+#brand-story-container .the_new_isle .island .content .swiper-slide > .range {
+  display: none;
+}
+#brand-story-container .the_new_isle .island .content .swiper-slide-active > .range {
+  display: block;
+}
 #brand-story-container .the_new_isle .island .content .range {
   position: relative;
 }
