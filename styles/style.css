@@ -148,19 +148,44 @@
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 2.7px 5.3px 7px 0px rgba(19, 41, 57, 0.41);
 }
-#brand-story-container .the_new_isle .island .content .range .card span {
+#brand-story-container .the_new_isle .island .content .range .card.element {
+  cursor: pointer;
+  padding: 2% 2% 2% 3%;
+}
+#brand-story-container .the_new_isle .island .content .range .card.element div div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+  padding-bottom: clamp(0px, 1.015625vw, 13px);
+  margin-bottom: clamp(0px, 1.015625vw, 13px);
+}
+#brand-story-container .the_new_isle .island .content .range .card.element div div span {
+  color: #06ff80;
+  font-size: clamp(14px, 2.65625vw, 34px);
+  line-height: 1.2;
+  font-weight: 700;
+  display: block;
+}
+#brand-story-container .the_new_isle .island .content .range .card.element div span {
+  display: inline-block;
+  color: white;
+  font-size: clamp(12px, 1.40625vw, 18px);
+  line-height: 1.2;
+  font-weight: 500;
+}
+#brand-story-container .the_new_isle .island .content .range .card div span {
   color: #ffff77;
   font-size: clamp(14px, 2.65625vw, 34px);
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 700;
   display: block;
 }
-#brand-story-container .the_new_isle .island .content .range .card a {
+#brand-story-container .the_new_isle .island .content .range .card div a {
   display: flex;
   align-items: center;
   margin-top: 2%;
 }
-#brand-story-container .the_new_isle .island .content .range .card a span {
+#brand-story-container .the_new_isle .island .content .range .card div a span {
   margin-right: 2%;
   display: block;
   color: white;
@@ -168,13 +193,97 @@
   font-weight: 400;
   line-height: 1;
 }
-#brand-story-container .the_new_isle .island .content .range .card a img {
-  max-width: 28px;
-  width: 2.1875vw;
+#brand-story-container .the_new_isle .island .content .range .card div a img {
+  width: clamp(0px, 2.1875vw, 28px);
 }
 #brand-story-container .the_new_isle .island .content .range .card img.pic,
 #brand-story-container .the_new_isle .island .content .range .card img.line {
   position: absolute;
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea_forest {
+  top: clamp(0px, 6.09375vw, 78px);
+  left: clamp(0px, 10.3125vw, 132px);
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea_forest > div > span {
+  width: clamp(0px, 25.625vw, 328px);
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea_forest .pic {
+  width: clamp(0px, 10.625vw, 136px);
+  top: clamp(-76px, -5.9375vw, 0px);
+  left: clamp(0px, 0vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .green_tea_forest .line {
+  width: clamp(0px, 9.0625vw, 116px);
+  bottom: clamp(-26px, -2.03125vw, 0px);
+  right: clamp(-115px, -8.984375vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .youth_leaf {
+  top: clamp(0px, 29.6875vw, 380px);
+  left: clamp(0px, 6.5625vw, 84px);
+}
+#brand-story-container .the_new_isle .island .content .range .youth_leaf > div > span {
+  width: clamp(0px, 24.21875vw, 310px);
+}
+#brand-story-container .the_new_isle .island .content .range .youth_leaf .pic {
+  width: clamp(0px, 6.953125vw, 89px);
+  top: clamp(-68px, -5.3125vw, 0px);
+  left: clamp(0px, 0.9375vw, 12px);
+}
+#brand-story-container .the_new_isle .island .content .range .youth_leaf .line {
+  width: clamp(0px, 14.0625vw, 180px);
+  top: clamp(-16px, -1.25vw, 0px);
+  right: clamp(-54px, -4.21875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .cica {
+  top: clamp(0px, 48.90625vw, 626px);
+  left: clamp(0px, 23.4375vw, 300px);
+}
+#brand-story-container .the_new_isle .island .content .range .cica > div > span {
+  width: clamp(0px, 27.03125vw, 346px);
+}
+#brand-story-container .the_new_isle .island .content .range .cica .pic {
+  width: clamp(0px, 6.953125vw, 89px);
+  top: clamp(0px, 1.5625vw, 20px);
+  left: clamp(-64px, -5vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .cica .line {
+  width: clamp(0px, 6.484375vw, 83px);
+  top: clamp(-100px, -7.8125vw, 0px);
+  right: clamp(0px, 7.5vw, 96px);
+}
+#brand-story-container .the_new_isle .island .content .range .stone {
+  top: clamp(0px, 7.8125vw, 100px);
+  right: clamp(0px, 11.71875vw, 150px);
+}
+#brand-story-container .the_new_isle .island .content .range .stone > div > span {
+  width: clamp(0px, 17.03125vw, 218px);
+}
+#brand-story-container .the_new_isle .island .content .range .stone .pic {
+  width: clamp(0px, 6.953125vw, 89px);
+  top: clamp(0px, 0.3125vw, 4px);
+  left: clamp(-64px, -5vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .stone .line {
+  width: clamp(0px, 5.546875vw, 71px);
+  top: clamp(0px, 10.9375vw, 140px);
+  left: clamp(-70px, -5.46875vw, 0px);
+}
+#brand-story-container .the_new_isle .island .content .range .light {
+  top: clamp(0px, 37.5vw, 480px);
+  right: clamp(0px, 7.96875vw, 102px);
+}
+#brand-story-container .the_new_isle .island .content .range .light > div > span {
+  width: clamp(0px, 22.5vw, 288px);
+}
+#brand-story-container .the_new_isle .island .content .range .light .pic {
+  width: clamp(0px, 8.984375vw, 115px);
+  top: clamp(-74px, -5.78125vw, 0px);
+  left: clamp(0px, 2.34375vw, 30px);
+}
+#brand-story-container .the_new_isle .island .content .range .light .line {
+  width: clamp(0px, 9.6875vw, 124px);
+  top: clamp(0px, 0.78125vw, 10px);
+  left: clamp(-123px, -9.609375vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .green_tea {
   top: clamp(0px, 10.78125vw, 138px);
@@ -187,8 +296,7 @@
   left: clamp(-24px, -1.875vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .green_tea .line {
-  max-width: 116px;
-  width: 9.0625vw;
+  width: clamp(0px, 9.0625vw, 116px);
   bottom: clamp(-26px, -2.03125vw, 0px);
   right: clamp(-116px, -9.0625vw, 0px);
 }
@@ -197,14 +305,12 @@
   left: clamp(0px, 6.40625vw, 82px);
 }
 #brand-story-container .the_new_isle .island .content .range .black_tea .pic {
-  max-width: 62px;
-  width: 4.84375vw;
+  width: clamp(0px, 4.84375vw, 62px);
   top: clamp(-74px, -5.78125vw, 0px);
   left: clamp(-24px, -1.875vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .black_tea .line {
-  max-width: 182px;
-  width: 14.21875vw;
+  width: clamp(0px, 14.21875vw, 182px);
   top: clamp(-16px, -1.25vw, 0px);
   right: clamp(-82px, -6.40625vw, 0px);
 }
@@ -213,14 +319,12 @@
   left: clamp(0px, 17.96875vw, 230px);
 }
 #brand-story-container .the_new_isle .island .content .range .retinol .pic {
-  max-width: 63px;
-  width: 4.921875vw;
+  width: clamp(0px, 4.921875vw, 63px);
   top: clamp(-64px, -5vw, 0px);
   left: clamp(-24px, -1.875vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .retinol .line {
-  max-width: 76px;
-  width: 5.9375vw;
+  width: clamp(0px, 5.9375vw, 76px);
   top: clamp(-90px, -7.03125vw, 0px);
   right: clamp(-7px, -0.546875vw, 0px);
 }
@@ -229,14 +333,12 @@
   right: clamp(0px, 3.75vw, 48px);
 }
 #brand-story-container .the_new_isle .island .content .range .volcanic .pic {
-  max-width: 90px;
-  width: 7.03125vw;
+  width: clamp(0px, 7.03125vw, 90px);
   top: clamp(-38px, -2.96875vw, 0px);
   left: clamp(-54px, -4.21875vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .volcanic .line {
-  max-width: 125px;
-  width: 9.765625vw;
+  width: clamp(0px, 9.765625vw, 125px);
   bottom: clamp(0px, 4.84375vw, 62px);
   left: clamp(-125px, -9.765625vw, 0px);
 }
@@ -245,14 +347,12 @@
   right: clamp(0px, 8.4375vw, 108px);
 }
 #brand-story-container .the_new_isle .island .content .range .vitamin_c .pic {
-  max-width: 63px;
-  width: 4.921875vw;
+  width: clamp(0px, 4.921875vw, 63px);
   top: clamp(-74px, -5.78125vw, 0px);
   left: clamp(-24px, -1.875vw, 0px);
 }
 #brand-story-container .the_new_isle .island .content .range .vitamin_c .line {
-  max-width: 125px;
-  width: 9.765625vw;
+  width: clamp(0px, 9.765625vw, 125px);
   bottom: clamp(0px, 1.71875vw, 22px);
   left: clamp(-124px, -9.6875vw, 0px);
 }

@@ -146,6 +146,7 @@
                 max-height: 1040px;
                 height: 81.25vw;
                 margin-top: 7.5%;
+               
                 .range {
                     position: relative;
                     .card {
@@ -154,14 +155,41 @@
                         border-radius: 9px;
                         background-color: rgba(255, 255, 255, 0.1);
                         box-shadow: 2.7px 5.3px 7px 0px rgba(19, 41, 57, 0.41);
-                        span {
+                        &.element {
+                            cursor: pointer;
+                            padding: 2% 2% 2% 3%;
+                            div {
+                                div {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+                                    padding-bottom: clampCalc(13, 0);
+                                    margin-bottom: clampCalc(13, 0);
+                                    span {
+                                        color: #06ff80;
+                                        font-size: clampCalc(34, 14);
+                                        line-height: 1.2;
+                                        font-weight: 700;
+                                        display: block;
+                                    }
+                                }
+                                span {
+                                    display: inline-block;
+                                    color: white;
+                                    font-size: clampCalc(18, 12);
+                                    line-height: 1.2;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        div span {
                             color: #ffff77;
                             font-size: clampCalc(34, 14);
                             line-height: 1.2;
-                            font-weight: 600;
+                            font-weight: 700;
                             display: block;
                         }
-                        a {
+                        div a {
                             display: flex;
                             align-items: center;
                             margin-top: 2%;
@@ -174,13 +202,97 @@
                                 line-height: 1;
                             }
                             img {
-                                max-width: 28px;
-                                width: 2.1875vw;
+                                width: clampCalc(28, 0);
                             }
                         }
                         img.pic,
                         img.line {
                             position: absolute;
+                        }
+                    }
+                    .green_tea_forest {
+                        > div > span {
+                            width: clampCalc(328, 0);
+                        }
+                        top: clampCalc(78, 0);
+                        left: clampCalc(132, 0);
+                        .pic {
+                            width: clampCalc(136, 0);
+                            top: clampCalc(-76, 0);
+                            left: clampCalc(0, 0);
+                        }
+                        .line {
+                            width: clampCalc(116, 0);
+                            bottom: clampCalc(-26, 0);
+                            right: clampCalc(-115, 0);
+                        }
+                    }
+                    .youth_leaf {
+                        > div > span {
+                            width: clampCalc(310, 0);
+                        }
+                        top: clampCalc(380, 0);
+                        left: clampCalc(84, 0);
+                        .pic {
+                            width: clampCalc(89, 0);
+                            top: clampCalc(-68, 0);
+                            left: clampCalc(12, 0);
+                        }
+                        .line {
+                            width: clampCalc(180, 0);
+                            top: clampCalc(-16, 0);
+                            right: clampCalc(-54, 0);
+                        }
+                    }
+                    .cica {
+                        > div > span {
+                            width: clampCalc(346, 0);
+                        }
+                        top: clampCalc(626, 0);
+                        left: clampCalc(300, 0);
+                        .pic {
+                            width: clampCalc(89, 0);
+                            top: clampCalc(20, 0);
+                            left: clampCalc(-64, 0);
+                        }
+                        .line {
+                            width: clampCalc(83, 0);
+                            top: clampCalc(-100, 0);
+                            right: clampCalc(96, 0);
+                        }
+                    }
+                    .stone {
+                        > div > span {
+                            width: clampCalc(218, 0);
+                        }
+                        top: clampCalc(100, 0);
+                        right:  clampCalc(150, 0);
+                        .pic {
+                            width: clampCalc(89, 0);
+                            top: clampCalc(4, 0);
+                            left: clampCalc(-64, 0);
+                        }
+                        .line {
+                            width: clampCalc(71, 0);
+                            top: clampCalc(140, 0);
+                            left: clampCalc(-70, 0);
+                        }
+                    }
+                    .light {
+                        > div > span {
+                            width: clampCalc(288, 0);
+                        }
+                        top: clampCalc(480, 0);
+                        right:  clampCalc(102, 0);
+                        .pic {
+                            width: clampCalc(115, 0);
+                            top: clampCalc(-74, 0);
+                            left: clampCalc(30, 0);
+                        }
+                        .line {
+                            width: clampCalc(124, 0);
+                            top: clampCalc(10, 0);
+                            left: clampCalc(-123, 0);
                         }
                     }
                     .green_tea {
@@ -193,8 +305,8 @@
                             left: clampCalc(-24, 0);
                         }
                         .line {
-                            max-width: 116px;
-                            width: 9.0625vw;
+                            width: clampCalc(116, 0);
+
                             bottom: clampCalc(-26, 0);
                             right: clampCalc(-116, 0);
                         }
@@ -203,14 +315,12 @@
                         top: clampCalc(388, 0);
                         left: clampCalc(82, 0);
                         .pic {
-                            max-width: 62px;
-                            width: 4.84375vw;
+                            width: clampCalc(62, 0);
                             top: clampCalc(-74, 0);
                             left: clampCalc(-24, 0);
                         }
                         .line {
-                            max-width: 182px;
-                            width: 14.21875vw;
+                            width: clampCalc(182, 0);
                             top: clampCalc(-16, 0);
                             right: clampCalc(-82, 0);
                         }
@@ -219,14 +329,12 @@
                         top: clampCalc(616, 0);
                         left: clampCalc(230, 0);
                         .pic {
-                            max-width: 63px;
-                            width: 4.921875vw;
+                            width: clampCalc(63, 0);
                             top: clampCalc(-64, 0);
                             left: clampCalc(-24, 0);
                         }
                         .line {
-                            max-width: 76px;
-                            width: 5.9375vw;
+                            width: clampCalc(76, 0);
                             top: clampCalc(-90, 0);
                             right: clampCalc(-7, 0);
                         }
@@ -235,14 +343,12 @@
                         top: clampCalc(148, 0);
                         right: clampCalc(48, 0);
                         .pic {
-                            max-width: 90px;
-                            width: 7.03125vw;
+                            width: clampCalc(90, 0);
                             top: clampCalc(-38, 0);
                             left: clampCalc(-54, 0);
                         }
                         .line {
-                            max-width: 125px;
-                            width: 9.765625vw;
+                            width: clampCalc(125, 0);
                             bottom: clampCalc(62, 0);
                             left: clampCalc(-125, 0);
                         }
@@ -251,14 +357,12 @@
                         top: clampCalc(520, 0);
                         right: clampCalc(108, 0);
                         .pic {
-                            max-width: 63px;
-                            width: 4.921875vw;
+                            width: clampCalc(63, 0);
                             top: clampCalc(-74, 0);
                             left: clampCalc(-24, 0);
                         }
                         .line {
-                            max-width: 125px;
-                            width: 9.765625vw;
+                            width: clampCalc(125, 0);
                             bottom: clampCalc(22, 0);
                             left: clampCalc(-124, 0);
                         }
