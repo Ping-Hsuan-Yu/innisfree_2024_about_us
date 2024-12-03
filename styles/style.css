@@ -42,7 +42,7 @@
 #brand-story-container .island {
   position: sticky;
   top: 0;
-  background-image: url("../assets/kv.png");
+  background-image: url("../assets/kv.webp");
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
@@ -54,7 +54,7 @@
 }
 #brand-story-container .island .sea {
   position: absolute;
-  background-image: url("../assets/kv-sea.png");
+  background-image: url("../assets/kv-sea.webp");
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
@@ -110,7 +110,7 @@
 }
 #brand-story-container .the_new_isle .island {
   position: relative;
-  background-image: url("../assets/isle-bg.png");
+  background-image: url("../assets/isle-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 1040px;
@@ -118,7 +118,7 @@
 }
 #brand-story-container .the_new_isle .island .island_sea {
   position: absolute;
-  background-image: url("../assets/isle-bg-sea.png");
+  background-image: url("../assets/isle-bg-sea.webp");
   background-size: cover;
   top: 0;
   left: 0;
@@ -449,10 +449,10 @@
   gap: 4px;
 }
 #brand-story-container .more .card_group .card:first-of-type {
-  background-image: url("../assets/green-tea-heritage.png");
+  background-image: url("../assets/green-tea-heritage.webp");
 }
 #brand-story-container .more .card_group .card:last-of-type {
-  background-image: url("../assets/better-for-earth.png");
+  background-image: url("../assets/better-for-earth.webp");
 }
 #brand-story-container .more .card {
   background-repeat: no-repeat;

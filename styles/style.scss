@@ -51,7 +51,7 @@
     .island {
         position: sticky;
         top: 0;
-        background-image: url("../assets/kv.png");
+        background-image: url("../assets/kv.webp");
         background-size: contain;
         @media (min-width: 620px) {
             background-size: cover;
@@ -60,7 +60,7 @@
         height: 100vh;
         .sea {
             position: absolute;
-            background-image: url("../assets/kv-sea.png");
+            background-image: url("../assets/kv-sea.webp");
             background-size: contain;
             @media (min-width: 620px) {
                 background-size: cover;
@@ -120,14 +120,14 @@
         margin-top: -20px;
         .island {
             position: relative;
-            background-image: url("../assets/isle-bg.png");
+            background-image: url("../assets/isle-bg.webp");
             background-size: cover;
             background-repeat: no-repeat;
             max-height: 1040px;
             height: 81.25vw;
             .island_sea {
                 position: absolute;
-                background-image: url("../assets/isle-bg-sea.png");
+                background-image: url("../assets/isle-bg-sea.webp");
                 background-size: cover;
                 top: 0;
                 left: 0;
@@ -464,10 +464,10 @@
             display: flex;
             gap: 4px;
             .card:first-of-type {
-                background-image: url("../assets/green-tea-heritage.png");
+                background-image: url("../assets/green-tea-heritage.webp");
             }
             .card:last-of-type {
-                background-image: url("../assets/better-for-earth.png");
+                background-image: url("../assets/better-for-earth.webp");
             }
         }
         .card {
